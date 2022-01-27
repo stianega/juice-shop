@@ -12,7 +12,7 @@ pipeline{
                     }
                     steps{
                         sh 'npm install --silent'
-                        sh 'npm start & npx wait-on http://localhost:3000'
+                        //sh 'npm start & npx wait-on http://localhost:3000'
                         sh "CYPRESS_API_URL=\"http://localhost:1234/\" npx cy2 run --record --key XXX --parallel --ci-build-id env.BUILD_ID"
                     }
                 }
@@ -22,7 +22,7 @@ pipeline{
                     }
                     steps{
                         sh 'npm install --silent'
-                        sh 'npm start & npx wait-on http://localhost:3000'
+                        //sh 'npm start & npx wait-on http://localhost:3000'
                         sh "CYPRESS_API_URL=\"http://localhost:1234/\" npx cy2 run --record --key XXX --parallel --ci-build-id env.BUILD_ID"
                     }
                 }

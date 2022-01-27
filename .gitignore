@@ -15,6 +15,8 @@ i18n/*.invalid
 data/chatbot/*.*
 !data/chatbot/.gitkeep
 /data/juiceshop.sqlite-journal
+data
+cypress/videos/*
 
 # Build
 .nyc_output/
